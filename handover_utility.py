@@ -5,8 +5,6 @@ import sys
 from pathlib import Path
 import xlsxwriter
 
-############ MAIN SCRIPT ###############
-
 def construct_excel_formulas(target_directory, dir_tree_df):
     """Find relative path of path in DataFrame, then construct Excel forumula that appends this to the
     path of the Excel workbook location. This is to ensure links don't break if drive letters change in SSD path.
